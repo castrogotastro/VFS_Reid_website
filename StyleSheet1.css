@@ -81,9 +81,21 @@ header.flex-container-lvl2-navigation {
 }
 
 
-
-.Content-Container-lvl1-all{
+/*CONTENT*/
+.Content-Container-lvl1-all {
     background-color: black;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.Content-Container-lvl2-WordsAndImg {
+    background-color: blue;
+    display: inline-flex;
+    width: 40%;
+    margin-top: 5%;
+    height: 50%;
+    
 }
 
 
