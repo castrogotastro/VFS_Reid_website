@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\pg27reid\\Documents\\PG27_Reid_Documents\\HTML\\HTML_Assignment1_Webpage_Reid\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pg27reid\\Documents\\PG27_Reid_Documents\\HTML\\HTML_Assignment1_Webpage_Reid\\StyleSheet1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StyleSheet1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pg27reid\\Documents\\PG27_Reid_Documents\\HTML\\HTML_Assignment1_Webpage_Reid\\source.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:source.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\pg27reid\\Documents\\PG27_Reid_Documents\\HTML\\HTML_Assignment1_Webpage_Reid\\StyleSheet1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:StyleSheet1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "StyleSheet1.css",
               "DocumentMoniker": "C:\\Users\\pg27reid\\Documents\\PG27_Reid_Documents\\HTML\\HTML_Assignment1_Webpage_Reid\\StyleSheet1.css",
               "RelativeDocumentMoniker": "StyleSheet1.css",
-              "ToolTip": "C:\\Users\\pg27reid\\Documents\\PG27_Reid_Documents\\HTML\\HTML_Assignment1_Webpage_Reid\\StyleSheet1.css*",
-              "RelativeToolTip": "StyleSheet1.css*",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAswBgAAAAiAAAA",
+              "ToolTip": "C:\\Users\\pg27reid\\Documents\\PG27_Reid_Documents\\HTML\\HTML_Assignment1_Webpage_Reid\\StyleSheet1.css",
+              "RelativeToolTip": "StyleSheet1.css",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-09-11T00:25:16.263Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "source.html",
               "DocumentMoniker": "C:\\Users\\pg27reid\\Documents\\PG27_Reid_Documents\\HTML\\HTML_Assignment1_Webpage_Reid\\source.html",
               "RelativeDocumentMoniker": "source.html",
-              "ToolTip": "C:\\Users\\pg27reid\\Documents\\PG27_Reid_Documents\\HTML\\HTML_Assignment1_Webpage_Reid\\source.html*",
-              "RelativeToolTip": "source.html*",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAUAAAA",
+              "ToolTip": "C:\\Users\\pg27reid\\Documents\\PG27_Reid_Documents\\HTML\\HTML_Assignment1_Webpage_Reid\\source.html",
+              "RelativeToolTip": "source.html",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAmwEYAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-09-11T00:25:03.629Z",
               "EditorCaption": ""
