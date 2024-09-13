@@ -124,20 +124,17 @@ header.flex-container-lvl3-navigation {
 
 /*UI*/
 .UI-Container-lvl1-all {
-    display: inline;
-    background-color: red;
-    display: inline-block;
-    width: 2vw;
-    margin-right: 0px;
+    display: inline-block; /*places sidebar on right side*/
+    transform: translate(0%,-140%); /*sticky position by default places container relative to first element in container that requires scrolling to see. This adjust the position to near the top*/
+    position: sticky;
+    height: 100%;
+    top: 0;
 }
 
 .UI-sidebar-lvl1 {
-    display: inline-block;
-    background-color: green;
+    background-color: darkblue;
     width: 5vw;
-    position:sticky;
-    top: 0;
-    z-index: 5;
+   
 }
 
 .UI-LinksSection-lvl2 {
