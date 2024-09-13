@@ -3,14 +3,6 @@
 
 /*HEADER */
 
-/*1 - main container*/
-.Header-Container-All-lvl1 {
-    /*lock header to top when scrolling*/
-
-    z-index: 3;
-    top: 0;
-    position: sticky;
-}
 
 .Header-Container-lvl2-title {
     /*BACKGROUND*/
@@ -29,7 +21,6 @@
     z-index:2;
 
 }
-
 /*3 header - title - Flex conatiner*/
 /*header class*/
 header.flex-container-lvl3-title {
@@ -41,8 +32,6 @@ header.flex-container-lvl3-title {
     height: 100%;
     border: 1px solid #2b2c28;
 }
-
-
 /*4 header - title - font conatiner*/
 #Header-font-container-lvl4 {
     flex-shrink: 1;
@@ -51,15 +40,24 @@ header.flex-container-lvl3-title {
     border: 1px solid #2b2c28;
 }
 
+
+
 /*HEADER - Navigation bar*/
+
+/*1 - main container*/
+.Header-Container-navigation-lvl1 {
+    /*lock header to top when scrolling*/
+
+    z-index: 3;
+    top: 0;
+    position: sticky;
+}
 
 /*3 header - navigation bar - Flex conatiner*/
 /*header class*/
-header.flex-container-lvl3-navigation {
+header.flex-container-lvl2-navigation {
     background-color: red;
     display: block-inline;
-    align-items: center;
-    justify-content: center;
     /*Color/sizing-Bg (align flex box with partner container and set to size of parent*/
     width: 100%;
     height: 50%;
@@ -93,59 +91,171 @@ header.flex-container-lvl3-navigation {
 }
 
 
-
-
+/*HEADER - SELF IMAGE*/
+.Header-Container-selfImage-lvl1 {
+    background-image: url("selfImage1.png");
+    height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
 /*CONTENT*/
+/*container for all mid section. Sidebar and middle content*/
 .Content-Container-lvl0-all {
     background-color: green;
     display: inline-block;
     width: 100%;
 }
-
+/*middle container for all content (articles, images, links)*/
 .Content-Container-lvl1-WordsAndImg {
     background-color: black;
     display: inline-block;
     width: 90%;
+    
 }
 
+/*middle container for all content (articles, images, links)*/
+#Content-Container-lvl2-WordsAndImg-setLeftAndRight {
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Content-Container-lvl2-WordsAndImg-Left {
+    background-color: aqua;
+    float: left; /*Sets flex container to justify on left side*/
+    margin-left: 10%; /*moves flex container closers to center and not directly hugging left side*/
+}
+
+   
+
+#Content-Container-lvl2-WordsAndImg-Right {
+    background-color: aqua;
+    float: right;
+    margin-right: 10%;
+    
+}
+
+.Content-FlexContainer-lvl2-WordsAndImg{
+    display: flex;
+    flex-direction: column;
+    
+}
+/*individual containers for groups (bio, projects, team members)*/
 .Content-Container-lvl2-WordsAndImg {
     background-color: blue;
     display: inline-block;
-    width: 35vw;
+    width: 25vw;
     height: 30vw;
     margin-top: 2%;
-    margin-left: 10%;
-    margin-bottom: 2%;
+    
+    margin-bottom: 5%;
+}
+
+/*Image*/
+/*Image with the individual containers*/
+.Content-Container-lvl3-Img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: red;
+    padding: 3px;
+    
+
     
 }
+
+    .Content-Container-lvl3-Img img {
+        
+        position: relative;
+        border-radius: 25%;
+        box-shadow: 4px 4px lavender;
+        transition: all 0.7s ease-in-out;
+        opacity: 1;
+        
+    }
+
+    .Content-Container-lvl3-Img h2 {
+        writing-mode: vertical-rl;
+    }
+    .Content-Container-lvl3-Img img:hover {
+        box-shadow: 3px 3px lavender;
+        bottom: -1%;
+        border-radius: 30%;
+        opacity: 0.7;
+    }
+    
+
+
+
+/*Word*/
+/*Words within the individual containers*/
+.Content-Container-lvl3-Words {
+    display: flex;
+    background-color: white;
+    padding: 5px;
+}
+
+
+
 
 
 /*UI*/
 .UI-Container-lvl1-all {
+    /*container that is locked in absolute position to ensure sidebar is always on right side regardless of screen side.*/
     display: inline-block; /*places sidebar on right side*/
-    transform: translate(0%,-140%); /*sticky position by default places container relative to first element in container that requires scrolling to see. This adjust the position to near the top*/
-    position: sticky;
-    height: 100%;
-    top: 0;
+    position: absolute;
+    background-color: pink;
+    top: 70vh;
+    right: 2vw;
+    height: 200vh;
 }
 
 .UI-sidebar-lvl1 {
+    /*container surrounding list items. Sets position of container on screen and the size of container*/
+    display: inline-block; /*places sidebar on right side*/
+    transform: translate(0%,-20%); /*sticky position by default places container relative to first element in container that requires scrolling to see. This adjust the position to near the top*/
+    position: sticky;
+    top:0;
+
     background-color: darkblue;
-    width: 5vw;
-   
+    width: 100%;
+    height: 80vh;
+    margin-left: 0%;
 }
 
 .UI-LinksSection-lvl2 {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    padding: 2%;
+    /*2nd container surrounding list items. Sets position of text within the container*/
+    display: inline-block;
+    
+    /*Adjust the placement of the list within the container. Center text, and lower it so sidebar is still visble with "sticky" and stops at top.*/
+    margin-block: auto;
+    margin-top: 20vh;
+    margin-left: -20px;
+    padding: 10px;
 }
 
     .UI-LinksSection-lvl2 li {
-        list-style: none;/*remove bullets*/
+        
+        list-style: none; /*remove bullets*/
+
+        margin-bottom: 35px;
+        font-size: 100%;
+        transition: all 0.7s ease-in-out;
+    }
+
+        .UI-LinksSection-lvl2 li a {
+            
+            color: red;
+            transition: all 0.7s ease-in-out;
+            text-decoration: none; /*Removed underline*/
+        }
+
+    .UI-LinksSection-lvl2 li a:hover {
+        color: aqua;
+        
     }
 
 
