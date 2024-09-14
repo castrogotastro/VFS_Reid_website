@@ -1,44 +1,48 @@
 ﻿
-
+body {
+    background-image: url("background_img.png");
+}
 
 /*HEADER */
 
 
 .Header-Container-lvl2-title {
-    /*BACKGROUND*/
-    /*Color/sizing/style-Bg*/
-    background-color: #7de2d1;
-    border: 1px solid #2b2c28;
-    width: 100%;
-    height: 10vh;
-    /*alignment-Bg*/
+    /*Display and position*/
     padding: 0px;
     margin-top: 0%;
-    /*FONT*/
-    /*Color/sizing-Ft*/
-    font: #2b2c28;
-    /*alignment-Ft*/
-    z-index:2;
-
-}
-/*3 header - title - Flex conatiner*/
-/*header class*/
-header.flex-container-lvl3-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /*Color/sizing-Bg (align flex box with partner container and set to size of parent*/
+    /*Color/sizing/style-Bg*/
     width: 100%;
-    height: 100%;
-    border: 1px solid #2b2c28;
+    height: 10vh;
+    /*FONT*/
+    font: #2b2c28;
+    font-family: Courier New, Courier, monospace;
+    /*alignment-Ft*/
+    z-index: 2;
+    background-color: transparent;
 }
-/*4 header - title - font conatiner*/
-#Header-font-container-lvl4 {
-    flex-shrink: 1;
-    font-size: 5vw;
-    white-space: nowrap;
-    border: 1px solid #2b2c28;
-}
+
+
+
+    /*3 header - title - Flex conatiner*/
+    /*header class*/
+    header.flex-container-lvl3-title {
+        /*Display and position*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /*Color/sizing-Bg (align flex box with partner container and set to size of parent*/
+        width: 100%;
+        height: 100%;
+        /*testing*/
+        /*border: 1px solid #2b2c28;*/
+    }
+        /*4 header - title - font conatiner*/
+        #Header-font-container-lvl4 {
+            flex-shrink: 1;
+            font-size: 5vw;
+            white-space: nowrap;
+            
+        }
 
 
 
@@ -46,132 +50,152 @@ header.flex-container-lvl3-title {
 
 /*1 - main container*/
 .Header-Container-navigation-lvl1 {
-    /*lock header to top when scrolling*/
-
-    z-index: 3;
+    /*Purpose - lock header to top when scrolling*/
+    /*Display and position*/
     top: 0;
     position: sticky;
+    /*alignment-Ft*/
+    z-index: 3;
 }
 
-/*3 header - navigation bar - Flex conatiner*/
-/*header class*/
-header.flex-container-lvl2-navigation {
-    background-color: red;
-    display: block-inline;
-    /*Color/sizing-Bg (align flex box with partner container and set to size of parent*/
-    width: 100%;
-    height: 50%;
-    border: 1px solid red;
-    font-size: 100%;
-    
-}
-
-/* 4 header - navigation - list*/
-/*<nav> - links to other parts of page*/
-/*<Ul class - list of elements*/
-.Header-navigationlist-lvl4 {
-    border: 1px solid green;
-    color: #2b2c28; /*color of link text*/
-    /*Color/sizing-Bg (align flex box with partner container and set to size of parent*/
-}
-
-/*4 header - navigation - list - list items (each item element within list)*/
-    .Header-navigationlist-lvl4 li {
-        list-style: none; /*takes away bullet points*/
-        display: inline; /*changes layout from vertical to horizontal*/
-        margin-right: 7%; /*adds space between items in list*/
-        margin-inline-start: 5%;
-        white-space: nowrap;
+    /*3 header - navigation bar - Flex conatiner*/
+    /*header class*/
+    header.flex-container-lvl2-navigation {
+        /*Color/sizing-Bg (align flex box with partner container and set to size of parent*/
+        background: linear-gradient(to right, rgba(117, 83, 238,0.5), rgba(0, 199, 232,0.2));
+        border: 2px solid white;
+        width: 100%;
+        height: 50%;
     }
 
-/*5 header - navigation - list - list items - a*/
-.Header-navigationlist-lvl4 li a{
-    text-decoration: none; /*removes underliner from link*/
-    color: inherit; /*take color from parent "li"*/
-}
+        /* 4 header - navigation - list*/
+        /*<nav> - links to other parts of page*/
+        /*<Ul class - list of elements*/
+        .Header-navigationlist-lvl4 {
+            border: 1px solid white;
+        }
+
+                /*4 header - navigation - list - list items (each item element within list)*/
+            .Header-navigationlist-lvl4 li {
+                /*Display & position*/
+                display: inline; /*changes layout from vertical to horizontal*/
+                /*alignment-Bg*/
+                margin-right: 7%; /*adds space between items in list*/
+                margin-inline-start: 5%;
+                /*Styling*/
+                white-space: nowrap;
+                list-style: none; /*takes away bullet points*/
+            }
+
+                /*5 header - navigation - list - list items - a*/
+                .Header-navigationlist-lvl4 li a {
+                    /*FONT*/
+                    font-family: Courier New, Courier, monospace;
+                    font-size: 100%; /*Fit text to size of container*/
+                    color: white; /*color of link text*/
+                    /*Transition between hover and non-hover*/
+                    transition: ease-in-out 0.7s all;
+                    /*styling*/
+                    text-decoration: none; /*removes underliner from link*/
+                }
+
+                    /*5 header - navigation - list - list items - a*/
+                    .Header-navigationlist-lvl4 li a:hover {
+                        /*FONT*/
+                        color: black; /*color of link text*/
+                        /*Transition between hover and non-hover*/
+                        transition: ease-in-out 0.7s all;
+                    }
 
 
 /*HEADER - SELF IMAGE*/
 .Header-Container-selfImage-lvl1 {
+    /*Imagge*/
     background-image: url("selfImage1.png");
+    /*Color/sizing/style-Bg*/
     height: 450px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border: 1px solid white;
 }
 
 
 /*CONTENT*/
 /*container for all mid section. Sidebar and middle content*/
 .Content-Container-lvl0-all {
-    background-color: green;
+    /*Display and position*/
     display: inline-block;
+    /*Color/sizing/style-Bg*/
     width: 100%;
+    background-color: transparent;
 }
-/*middle container for all content (articles, images, links)*/
-.Content-Container-lvl1-WordsAndImg {
-    background-color: black;
-    display: inline-block;
-    width: 90%;
-    
-}
+    /*middle container for all content (articles, images, links) Does not include side bar*/
+    .Content-Container-lvl1-WordsAndImg {
+        /*Display and position*/
+        display: inline-block;
+        /*Color/sizing/style-Bg*/
+        background-color: transparent;
+        width: 90%;
+    }
 
-/*middle container for all content (articles, images, links)*/
-.Content-Container-lvl2-WordsAndImg-setLeftAndRight {
-    background-color: grey;
-    display: flex;
-    justify-content: space-between;
-}
+        /*middle container for all content (articles, images, links) Horizontal flex container that houses the vertical columns*/
+        .Content-Container-lvl2-WordsAndImg-setLeftAndRight {
+            /*Display and position*/
+            display: flex;
+            justify-content: space-between;
+        }
+            /*LEFT CONTAINTER - First of vertical columns that set position. It's of type flex and floats left, setting it to the left side*/
+            .Content-Container-lvl3-WordsAndImg-Left {
+                /*Display and position*/
+                float: left; /*Sets flex container to justify on left side*/
+                margin-left: 10%; /*moves flex container closers to center and not directly hugging left side*/
+                /*Color/sizing/style-Bg*/
+                background-color: transparent;
+            }
 
-.Content-Container-lvl3-WordsAndImg-Left {
-    background-color: aqua;
-    float: left; /*Sets flex container to justify on left side*/
-    margin-left: 10%; /*moves flex container closers to center and not directly hugging left side*/
-    
-}
 
-   
+            /*Right CONTAINTER - First of vertical columns that set position. It's of type flex and floats right, setting it to the right side*/
+            .Content-Container-lvl3-WordsAndImg-Right {
+                /*Display and position*/
+                float: right;
+                margin-right: 10%;
+                /*Color/sizing/style-Bg*/
+                background-color: transparent;
+            }
+                /*Vertical colmns that house the all Img-article-containers. One vertical column is on the left and the other is on the right. They're position is determined by lvl3 */
+                #Content-FlexContainer-lvl4-WordsAndImg {
+                    /*Display and position*/
+                    display: flex;
+                    flex-direction: column;
+                }
+                    /*IMG-Article-Containers - individual containers that stack vertically within the vertical column lvl4. These house the Imgage container and article containers*/
+                    .Content-Container-lvl5-WordsAndImg {
+                        /*Display and position*/
+                        display: inline-block;
+                        margin-top: 2%;
+                        border: 3px solid black;
+                        border-radius: 25px;
+                        margin-bottom: 5%;
+                        /*Color/sizing/style-Bg*/
+                        width: 25vw;
+                        height: 30vw;                            
+                    }
 
-.Content-Container-lvl3-WordsAndImg-Right {
-    background-color: aqua;
-    float: right;
-    margin-right: 10%;
-    
-}
-
-#Content-FlexContainer-lvl4-WordsAndImg{
-    background-color: pink;
-    display: flex;
-    flex-direction: column;
-    
-}
-/*individual containers for groups (bio, projects, team members)*/
-.Content-Container-lvl5-WordsAndImg {
-    background-color: blue;
-    display: inline-block;
-    width: 25vw;
-    height: 30vw;
-    margin-top: 2%;
-    border: 3px solid black;
-    border-radius: 25px;
-    
-    margin-bottom: 5%;
-}
-
-/*Image*/
-/*Image with the individual containers*/
-#Content-Container-lvl6-Img {
-    display: flex;
-    
-    justify-content: center;
-    align-content: center;
-    background-color: red;
-    padding: 3px;
-    border-radius: 25px;
-}
+                        /*Image*/
+                        /*Image with the Img-Article-Container*/
+                        #Content-Container-lvl6-Img {
+                            /*Display and position*/
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                            /*Color/sizing/style-Bg*/
+                            background-color: transparent;
+                            padding: 3px;
+                            border-radius: 25px;
+                        }
 
     #Content-Container-lvl6-Img img {
-        
         position: relative;
         border-radius: 25%;
         box-shadow: 4px 4px lavender;
@@ -266,6 +290,11 @@ header.flex-container-lvl2-navigation {
         
     }
 
+/*TESTING*/
 
+/*.Header-Container-lvl2-title {
+    background-color: #7de2d1;
 
+}
+*/
 
