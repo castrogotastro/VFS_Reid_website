@@ -1,6 +1,7 @@
 ﻿
 body {
     background-image: url("background_img.png");
+   
 }
 
 /*HEADER */
@@ -182,6 +183,7 @@ body {
                         height: 30vw;                            
                     }
 
+
                         /*Image*/
                         /*Container for Image with the Img-Article-Container*/
                         #Content-Container-lvl6-Img {
@@ -234,7 +236,57 @@ body {
                             overflow-wrap: anywhere;
                         }
 
+            /*Left side only - Only one vertical column and the Img-Article Containers are wide. use for bio page*/
+                /*IMG-Article-Containers - individual containers that stack vertically within the vertical column lvl4. These house the Imgage container and article containers*/
+                .Content-Container-lvl5-WordsAndImg-wide-leftsideonly {
+                    /*Display and position*/
+                    display: inline-block;
+                    margin-top: 2%;
+                    border: 3px solid black;
+                    border-radius: 25px;
+                    margin-bottom: 5%;
+                    /*Color/sizing/style-Bg*/
+                    width: 60vw;
+                    padding: 7px;
+                    /*height automatically adjust based on text box if height is left undefined.*/
+                }
 
+                    /*Image*/
+                    /*Container for Image with the Img-Article-Container*/
+                    #Content-Container-lvl6-Img-wide-leftsideonly {
+                        /*Display and position*/
+                        display: flex;                        
+                        /*Color/sizing/style-Bg*/
+                        background-color: transparent;
+                        padding: 3px;
+                        border-radius: 25px;
+                    }
+                            /*Image*/
+                            #Content-Container-lvl6-Img-wide-leftsideonly img {
+                                /*Display and position*/
+                                position: relative;
+                                /*Color/sizing/style-Bg*/
+                                border-radius: 25%;
+                            }
+                           
+                            /*Title of article - located in same flex box as image. It's displayed vertically*/
+                            #Content-Container-lvl6-Img-wide-leftsideonly h2 {
+                                writing-mode: vertical-rl;
+                            }
+
+                    /*Word*/
+                    /*Words within the individual containers*/
+                    #Content-Container-lvl6-Words-wide-leftsideonly {
+                        /*Display and position*/
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: left;
+                        /*Color/sizing/style-Bg*/
+                        background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+                        border-radius: 10px;
+                        /*SUPER IMPORTANT - WRAPS TEXT WITHIN FLEX BOX*/
+                        overflow-wrap: anywhere;
+                    }
 
 
 
@@ -242,66 +294,76 @@ body {
 
 
 /*UI*/
+/*UI Right Side positioning - container that is locked in absolute position to ensure sidebar is always on right side regardless of screen side.*/
 .UI-Container-lvl1-all {
-    /*container that is locked in absolute position to ensure sidebar is always on right side regardless of screen side.*/
+    /*Display and position*/
     display: inline-block; /*places sidebar on right side*/
     position: absolute;
-    background-color: pink;
     top: 70vh;
     right: 2vw;
+    /*Color/sizing/style-Bg*/
     height: 200vh;
 }
 
-.UI-sidebar-lvl1 {
-    /*container surrounding list items. Sets position of container on screen and the size of container*/
-    display: inline-block; /*places sidebar on right side*/
-    transform: translate(0%,-20%); /*sticky position by default places container relative to first element in container that requires scrolling to see. This adjust the position to near the top*/
-    position: sticky;
-    top:0;
+    /*UI Sticky Slider - Stick position reacts to scrolling. The size of this container stops it at the top while showing all the contents of the sidebar when scrolling. 
+        It's oversized on purposed. */
+    .UI-sidebar-lvl1 {
+        /*Display and position*/
+        display: inline-block; /*places sidebar on right side*/
+        transform: translate(0%,-20%); /*sticky position by default places container relative to first element in container that requires scrolling to see. This adjust the position to near the top*/
+        position: sticky;
+        top: 0;
+        /*Color/sizing/style-Bg*/
+        background-color: transparent;
+        width: 100%;
+        height: 70vh;
 
-    background-color: darkblue;
-    width: 100%;
-    height: 80vh;
-    margin-left: 0%;
 }
 
+/*UI Text container - container surrounding link list items. It's inline-block to allow for more spacing options between each link and adjust the container position within it's parent */
 .UI-LinksSection-lvl2 {
-    /*2nd container surrounding list items. Sets position of text within the container*/
+    /*Display and position*/ /*Adjust the placement of the list within the container. Center text, and lower it so sidebar is still visble with "sticky" and stops at top.*/
     display: inline-block;
-    
-    /*Adjust the placement of the list within the container. Center text, and lower it so sidebar is still visble with "sticky" and stops at top.*/
     margin-block: auto;
     margin-top: 20vh;
     margin-left: -20px;
     padding: 10px;
+    /*Color/sizing/style-Bg*/
+    background: linear-gradient(to right, rgba(117, 83, 238,0.5), rgba(0, 199, 232,0.2));
+    border-radius: 10px;
+    border: 1px solid white;
 }
-
+    /*UI List*/
     .UI-LinksSection-lvl2 li {
-        
-        list-style: none; /*remove bullets*/
-
+        /*Display and position*/
         margin-bottom: 35px;
         font-size: 100%;
-        transition: all 0.7s ease-in-out;
+        /*Styling*/
+        list-style: none; /*remove bullets*/
     }
-
+        /*Link <a - normal*/
         .UI-LinksSection-lvl2 li a {
-            
-            color: red;
+            color: white;
+            /*Transition between hover and non-hover*/
             transition: all 0.7s ease-in-out;
             text-decoration: none; /*Removed underline*/
         }
-
-    .UI-LinksSection-lvl2 li a:hover {
-        color: aqua;
-        
-    }
-
-/*TESTING*/
-
-/*.Header-Container-lvl2-title {
-    background-color: #7de2d1;
-
+            /*Link <a - no hover*/
+            .UI-LinksSection-lvl2 li a:hover {
+                /*Transition between hover and non-hover*/
+                color: black;
+      
+                }
+.flex-container-lvl1-footer {
+    /*Color/sizing-Bg (align flex box with partner container and set to size of parent*/
+    background: linear-gradient(to right, rgba(117, 83, 238,0.5), rgba(0, 199, 232,0.2));
+ 
+   
 }
-*/
 
+#flex-container-lvl1-footer p {
+    /*FONT*/
+    font: white;
+    font-family: Courier New, Courier, monospace;
+    /*alignment-Ft*/
+}
