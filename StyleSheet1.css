@@ -183,7 +183,7 @@ body {
                     }
 
                         /*Image*/
-                        /*Image with the Img-Article-Container*/
+                        /*Container for Image with the Img-Article-Container*/
                         #Content-Container-lvl6-Img {
                             /*Display and position*/
                             display: flex;
@@ -194,38 +194,45 @@ body {
                             padding: 3px;
                             border-radius: 25px;
                         }
+                            /*Image*/
+                            #Content-Container-lvl6-Img img {
+                                /*Display and position*/
+                                position: relative;
+                                /*Color/sizing/style-Bg*/
+                                border-radius: 25%;
+                                /*Transition between hover and non-hover*/
+                                box-shadow: 4px 4px lavender;
+                                transition: all 0.5s ease-in-out;
+                                opacity: 1;
+                            }
+                                /*Image - on hover - change properties to animate when cursor is over img*/
+                                #Content-Container-lvl6-Img img:hover {
+                                    /*Transition between hover and non-hover*/
+                                    box-shadow: 3px 3px lavender;
+                                    bottom: -0.5%;
+                                    border-radius: 30%;
+                                    opacity: 0.7;
+                                    transition: all 0.5s ease-in-out;
+                                }
+                            /*Title of article - located in same flex box as image. It's displayed vertically*/
+                            #Content-Container-lvl6-Img h2 {
+                                writing-mode: vertical-rl;
+                            }
 
-    #Content-Container-lvl6-Img img {
-        position: relative;
-        border-radius: 25%;
-        box-shadow: 4px 4px lavender;
-        transition: all 0.5s ease-in-out;
-        opacity: 1;
-        
-    }
 
-    #Content-Container-lvl6-Img h2 {
-        writing-mode: vertical-rl;
-    }
-    #Content-Container-lvl6-Img img:hover {
-        box-shadow: 3px 3px lavender;
-        bottom: -0.5%;
-        border-radius: 30%;
-        opacity: 0.7;
-        transition: all 0.5s ease-in-out;
-    }
-    
-
-
-/*Word*/
-/*Words within the individual containers*/
-#Content-Container-lvl6-Words {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    background-color: white;
-    overflow-wrap: anywhere;
-}
+                        /*Word*/
+                        /*Words within the individual containers*/
+                        #Content-Container-lvl6-Words {
+                            /*Display and position*/
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: left;
+                            /*Color/sizing/style-Bg*/
+                            background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+                            border-radius: 10px;
+                            /*SUPER IMPORTANT - WRAPS TEXT WITHIN FLEX BOX*/
+                            overflow-wrap: anywhere;
+                        }
 
 
 
